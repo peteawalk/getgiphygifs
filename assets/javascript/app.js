@@ -1,13 +1,12 @@
 const apiKey = "BkaUZZWcFij6J7AoQj3WtPb1R2p9O6V9";
-var topics = ["dave chappelle", "dwayne johnson🎥", "danny devito", "bruce lee", "taylor swift", "zion williamson", "paul rudd", "beyonce🐝", "elon musk", "dwayne johnson🎥", "wayne brady", "lewis hamilton🏎️", "lana del ray", "mariah scarey", "janet jackson", "dolly parton", "kevin hart", "aziz ansari", "ron swanson", "jeremy clarkson", "kevin durant", "patrick mahomes"];
+var topics = ["dave chappelle", "dwayne johnson🎥", "danny devito", "bruce lee", "taylor swift", "zion williamson", "paul rudd", "beyonce🐝", "elon musk", "wayne brady", "lewis hamilton🏎️", "lana del ray", "mariah scarey", "janet jackson", "dolly parton", "kevin hart", "aziz ansari", "ron swanson", "jeremy clarkson", "kevin durant", "patrick mahomes", "george clooney"];
 
-$(document).ready(function () {
+$(document).ready(function () { // Write initial buttons to page
     for (var i = 0; i < topics.length; i++) {
         var createButtons = $("<button>").text(topics[i]).addClass("original-buttons");
         createButtons.attr("data-celeb", topics[i]);
         $("#buttons").append(createButtons);
     };
-
 
     // On-click for items in original array items!
     $(".original-buttons").on("click", function () {

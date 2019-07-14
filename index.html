@@ -12,22 +12,26 @@
 </head>
 
 <body>
-    <div class="jumbotron">
-        <h1 class="text-center">WTG -- WhatTheGif!</h1>
-    </div>
-
-    <!-- Search form -->
-    <form class="form-inline">
-        <div class="form-group">
-            <label for="search"></label>
-            <input id="search-bar" type="text" placeholder="Search for a celebrity!">
+    <div id="wrapper">
+        <div class="jumbotron">
+            <h1 class="text-center">WTG -- WhatTheGif!</h1>
+            <h5 class="text-center">Click on a button or search for yourself and click away</h5>
         </div>
-        <button id="find-celeb" class="btn btn-primary">Search</button>
-    </form>
 
-    <div id="buttons"></div>
+        <!-- Search form -->
+        <form class="form-inline">
+            <div class="form-group">
+                <label for="search"></label>
+                <input id="search-bar" type="text" placeholder="Search for a celebrity!">
+            </div>
+            <button id="find-celeb" class="btn btn-primary">Search</button>
+        </form>
 
-    <div id="gifs-appear-here"></div>
+        <div id="buttons"></div>
+
+        <div id="gifs-appear-here" class="container-fluid"></div>
+
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/javascript/app.js"> </script>
