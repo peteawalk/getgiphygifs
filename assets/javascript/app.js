@@ -86,7 +86,7 @@ $(document).ready(function () { // Write initial buttons to page
         createButtons.attr("data-celeb", inputCelebrity);
         createButtons.attr("class", "newButtons");
         $("#buttons").append(createButtons);
-        $("#search-bar").empty(); // empty search-bar after initial search!
+        $("#search-bar").val(""); // empty search-bar after initial search!
     });
 
     // Handler for pause / play of gifs
